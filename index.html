@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/styles/style.css">
+    <script src="https://kit.fontawesome.com/bab207fbef.js" crossorigin="anonymous"></script>
     <title>Personal Site | Isaiah Brown</title>
 </head>
+
 <body>
     <header>
 
@@ -39,69 +42,103 @@
 
         <section id="about-me">
             <h2>About me.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique sollicitudin nibh sit amet commodo. Quis hendrerit dolor magna eget est lorem. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Tristique sollicitudin nibh sit amet commodo. Quis hendrerit dolor magna eget est
+                lorem. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
 
-            <h3>Profile Detail</h3>
-            <table class="profile-detail-container">
-                <tr>
-                    <th>Dev Experience</th>
-                    <th>Frontend & Game Development</th>
-                </tr>
-                <tr>
-                    <th>Skills</th>
-                    <th>icons</th>
-                </tr>
-                <tr>
-                    <th>Job Status</th>
-                    <th>Walmart</th>
-                    <th>Searching...</th>
-                </tr>
-            </table>
+            <div class="profile-detail-interest-container">
 
-            <h3>My Interest</h3>
-            <div class="my-interest-container">
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Games</h4>
+                <div class="profile-detail-content">
+
+                    <h3 class="profile-detail-header">Profile Detail</h3>
+                    <table class="profile-detail-container">
+                        <tbody>
+
+                            <tr>
+                                <th>Dev Experience</th>
+                                <td colspan="2">Frontend, Gameplay Programmer, 3D Environmental Art</td>
+                            </tr>
+
+                            <tr>
+                                <th>Skills</th>
+                                <td>
+                                    <div class="skills-container">
+                                        <i class="fa-brands fa-html5"></i>
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <i class="fa-brands fa-js"></i>
+                                        <i class="fa-brands fa-github"></i>
+                                        <i class="fa-brands fa-git-alt"></i>
+                                        <i class="fa-brands fa-unity"></i>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Job Status</th>
+                                <td class="walmart-box">Walmart<img src="resources/images/walmart-spark.png" alt="walmart spark"></td>
+                                <td class="searching-box">Currently Searching...</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+    
                 </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Teaching</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Android</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Socialize</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Cars</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Travel</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Creativity</h4>
-                </div>
-                <div class="my-interest-item">
-                    <img src="" alt="icon">
-                    <h4>Space</h4>
+    
+                <div class="my-interest-content">
+    
+                    <h3>My Interest</h3>
+                    <div class="my-interest-container">
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <h4 class="my-interest-item-title">Games</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <h4 class="my-interest-item-title">Teaching</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-brands fa-android"></i>
+                            <h4 class="my-interest-item-title">Android</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-people-arrows"></i>
+                            <h4 class="my-interest-item-title">Socialize</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4 class="my-interest-item-title">Cars</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-plane"></i>
+                            <h4 class="my-interest-item-title">Travel</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-solid fa-palette"></i>
+                            <h4 class="my-interest-item-title">Creativity</h4>
+                        </div>
+                        <div class="my-interest-item">
+                            <i class="fa-brands fa-space-awesome"></i>
+                            <h4 class="my-interest-item-title">Space</h4>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
 
-            <button class="resume-button">Download CV</button>
+            <a class="cv-download-button" href="https://my.indeed.com/p/isaiahb-y4k92wb" target="_blank">View/Download CV</a>
         </section>
 
         <section id="talents">
             <h2>My know-hows and Talets</h2>
             <div class="talent-container">
                 <div class="talent-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Lacinia at quis risus sed vulputate odio ut enim. Accumsan in nisl nisi scelerisque eu. Consequat mauris nunc congue nisi vitae suscipit. Pellentesque habitant morbi tristique senectus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Nullam ac tortor vitae purus faucibus. Tortor at risus viverra adipiscing at. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit.
+                        Lacinia at quis risus sed vulputate odio ut enim. Accumsan in nisl nisi scelerisque eu.
+                        Consequat mauris nunc congue nisi vitae suscipit. Pellentesque habitant morbi tristique
+                        senectus. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Nullam ac tortor vitae
+                        purus faucibus. Tortor at risus viverra adipiscing at. Aenean vel elit scelerisque mauris
+                        pellentesque pulvinar pellentesque.</p>
                 </div>
                 <div class="talent-item">
                     <img src="" alt="bar graph">
@@ -131,7 +168,7 @@
                     <img src="" alt="icon">
                     <h3>irbrown54321@gmail.com</h3>
                 </div>
-                
+
                 <div class="contact-me-item">
                     <img src="" alt="icon">
                     <h3>Linked-in</h3>
@@ -192,4 +229,5 @@
         <h5>&#0169 All Rights Reserved</h5>
     </footer>
 </body>
+
 </html>
