@@ -260,3 +260,48 @@ table{
     background-color: #2185D5;
     border-color: #303841;
 }
+
+/* TALENT SECTION */
+
+#talents{
+    text-align: center;
+    background-color: #3A4750;
+    color: #f3f3f3;
+    padding: 4rem 0;
+}
+
+#talents h2{
+    margin-bottom: 6rem;
+}
+
+.talent-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ .talent-paragraph{
+    width: 23.7rem;
+    padding: 4rem;
+    background-color: #303841;
+ }
+
+ .talent-dial-container{
+    width: 35.7rem;
+ }
+
+ .talent-dial-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    text-align: left;
+ }
+
+ .talent-dial-item img{
+    width: 22%;
+    float: left;
+    margin-left: 12rem;
+ }
+
