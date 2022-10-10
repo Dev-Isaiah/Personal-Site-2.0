@@ -338,3 +338,48 @@ table{
 .project-showcase-container a img{
     width: 100%;
 }
+
+/* CONTACT ME SECTION */
+
+#contact-me{
+    padding: 4rem 4rem 2rem 4rem;
+    background-color: #3A4750;
+    color: #F3F3F3;
+    text-align: center;
+}
+
+#contact-me h2{
+    margin-bottom: 6rem;
+}
+
+.contact-me-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-me-container a{
+    color: #F3F3F3;
+    text-decoration: none;
+    margin-bottom: 8rem;
+}
+
+.contact-me-item{
+    width: 30rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-me-item:hover{
+    transform: scale(1.2);
+}
+
+
+.contact-me-item .contact-me-icon{
+    font-size: 4rem;
+    padding: 3rem;
+    border-radius: 50%;
+    background-color: #2185D5;
+    margin-bottom: 1.5rem;
+}
