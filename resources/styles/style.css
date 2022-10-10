@@ -305,3 +305,36 @@ table{
     margin-left: 12rem;
  }
 
+ /* PROJECT SHOWCASE */
+ #projects{
+    padding: 4rem 0;
+    background-color: #303841;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#projects h2{
+    margin-bottom: 6rem;
+}
+
+.project-showcase-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-showcase-container a{
+    width: 25%;
+    margin: 1rem;
+    transition: 0.5s;
+}
+
+.project-showcase-container a:hover{
+    width: 30%;
+}
+
+.project-showcase-container a img{
+    width: 100%;
+}
