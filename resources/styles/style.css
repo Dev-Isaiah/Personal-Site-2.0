@@ -166,7 +166,7 @@ table{
 }
 
 .profile-detail-content table tbody th{
-    color: #34B3F1;
+    color: #4F98CA;
     text-align: start;
 }
 
@@ -382,4 +382,53 @@ table{
     border-radius: 50%;
     background-color: #2185D5;
     margin-bottom: 1.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background-color: #205375;
+    color: #f3f3f3;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.footer-social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-item{
+    margin: 25px 100px;
+    width: 150px;
+    color: #FDFCE5;
+    text-decoration: inherit;
+    transition-duration: 0.5s;
+}
+
+.social-item:hover{
+    transform: scale(1.3);
+}
+
+.social-item h4{
+    font-weight: 300;
+}
+
+.footer-social-icon{
+    float: left;
+    font-size: 24px;
+}
+
+hr{
+    width: 45%;
+    margin: 2rem auto;
 }
