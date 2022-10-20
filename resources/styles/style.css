@@ -10,9 +10,17 @@ html{
     line-height: 1.8;
 }
 
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #2185D5;
+    color: #f3f3f3;
+}
+
 main, footer{
     position: relative;
     top: 60px;
+    z-index: 0;
 }
 
 h1{
@@ -107,29 +115,28 @@ nav li a{
 /* BANNER SECTION */
 
 #banner{
-    background-color: #2185D5;
-    color: #f3f3f3;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 4rem 2rem;
 }
 
-.banner-image{
-    width: 85%;
+.banner-row-col-one, .banner-row-col-two{
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.banner-text{
-    margin-bottom: 4rem;
-    text-align: right;
+.banner-row-col-one{
+    width: 700px;
 }
 
-@media only screen and (max-width: 1240px){
-    .banner-text{
-        text-align: center;
-    }
+.banner-row-col-one img{
+    height: 500px;
+}
+
+.banner-row-col-two{
+    text-align: left;
+    border: #A2DBFA solid 20px;
+    padding: 32px;
+    width: 550px;
+    box-shadow: #3A4750 8px 8px 2px;
 }
 
 /* ABOUT SECTION */
