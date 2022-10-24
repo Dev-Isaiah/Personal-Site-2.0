@@ -116,6 +116,7 @@ nav li a{
 
 #banner{
     text-align: center;
+    padding: 4% 0;
 }
 
 .banner-row-col-one, .banner-row-col-two{
@@ -124,7 +125,8 @@ nav li a{
 }
 
 .banner-row-col-one{
-    width: 700px;
+    width: 650px;
+    min-width: 500px;
 }
 
 .banner-row-col-one img{
@@ -136,6 +138,7 @@ nav li a{
     border: #A2DBFA solid 20px;
     padding: 32px;
     width: 550px;
+    min-width: 500px;
     box-shadow: #3A4750 8px 8px 2px;
 }
 
@@ -143,116 +146,91 @@ nav li a{
 
 #about-me{
     background-color: #303841;
-    color: #f3f3f3;
     text-align: center;
-    padding: 4rem 0;
+    padding: 4% 0;
 }
 
-#about-me p{
-    text-align: start;
-    margin: 0 auto;
-    width: 50%;
+#about-me .row-one, .row-two{
+    margin-bottom: 80px;
 }
 
-.profile-detail-interest-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 6em 0;
+.about-me-row-two-column-one, .about-me-row-two-column-two{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 26px;
+    width: 650px;
 }
 
-table{
-    border-collapse: separate;
-    border-spacing: 3.5rem 2.5rem;
+.profile-detail-row-one, .profile-detail-row-two, .profile-detail-row-three{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.profile-detail-content table tbody th, td{
-    font-family: "Roboto", sans-serif;
-    padding: 0.3rem 1.5rem;
+.profile-detail-row-three{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.profile-detail-content table tbody th{
-    color: #4F98CA;
-    text-align: start;
+.profile-detail-row-one-column-one, .profile-detail-row-two-column-one, .profile-detail-row-three-column-one{
+    text-align: left;
 }
 
-.profile-detail-content .skills-container{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
+.profile-detail-row-two-column-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
 }
 
-.profile-detail-header{
-    margin-right: 16rem;
+.profile-detail-row-three-column-two, .profile-detail-row-three-column-three{
+    border-radius: 10px;
+    font-size: 18px;
 }
 
-.profile-detail-content .skills-container *{
-    font-size: 2rem;
-    padding: 0.5rem;
-}
-
-.profile-detail-content table tbody .walmart-box{
+.profile-detail-row-three-column-two{
     background-color: #0071CE;
-    color: #f3f3f3;
-    padding: 0.4rem 1.5rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
-.profile-detail-content table tbody .walmart-box img{
-    width: 18px;
-    height: 17px;
+.profile-detail-row-three-column-two h4::after{
+    content: url(file:///C:/Users/irbro/Desktop/Projects/personal-website/resources/images/walmart-spark.png);
     position: relative;
-    top: 0.1rem;
-    left: 0.5rem;
+    zoom: 4%;
+    top: 100px;
+    left: 160px;
+    font-size: 24px;
 }
 
+.profile-detail-row-three-column-three{
+    background-color: #FF5858;
+    padding-right: 12px;
+}
 
-.profile-detail-content table tbody .searching-box::before{
+.profile-detail-row-three-column-three h4::before{
     content: "+";
-    position: relative;
-    right: 3.55rem;
-}
-
-.profile-detail-content table tbody .searching-box{
-    background-color: #FF884B;
-    color: #f3f3f3;
-    border-radius: 5px;
-    text-transform: uppercase;
     font-weight: bold;
+    position: relative;
+    right: 16px;
 }
 
-.my-interest-content{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap
+.skills-icon{
+    font-size: 30px;
 }
 
-.my-interest-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 30rem;
-    margin-top: 1.4rem;
+.my-interest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 28px 120px 0;
 }
 
-.my-interest-item{
+.my-interest > *{
     background-color: #3A4750;
-    height: 6rem;
-    width: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0.613rem;
-}
-
-.my-interest-item-title{
-    margin-top: 0.4rem;
+    width: 90px;
+    height: 90px;
 }
 
  .cv-download-button{
