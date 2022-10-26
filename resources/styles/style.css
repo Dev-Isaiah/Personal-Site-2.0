@@ -104,6 +104,7 @@ nav li a{
 @media only screen and (max-width: 768px){
     nav{
         overflow: scroll;
+        overflow-y: hidden;
         margin: auto;
     }
 
@@ -331,6 +332,10 @@ nav li a{
     .about-me-row-two-column-one{
         width: 65%;
     }
+
+    .about-me-row-two-column-two{
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -365,6 +370,26 @@ nav li a{
 
     .profile-detail-row-three-column-two{
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .my-interest{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile-detail-row-three-column-two{
+        width: 110%;
+        font-size: 14px;
+    }
+
+    .profile-detail-row-three-column-two h4::after{
+        zoom: 3%
+    }
+
+    .profile-detail-row-three-column-three{
+        font-size: 12px;
+        width: 130%;
     }
 }
 
@@ -475,7 +500,7 @@ nav li a{
 }
 
 .contact-me-item{
-    width: 30rem;
+    width: 100%;
     transition: all 0.2s ease-in-out;
 }
 
