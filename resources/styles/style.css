@@ -24,16 +24,16 @@ main, footer{
 }
 
 h1{
-    font-size: 4.2rem;
+    font-size: 60px;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 400;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -116,7 +116,7 @@ nav li a{
 
 #banner{
     text-align: center;
-    padding: 4% 0;
+    padding: 7% 2%;
 }
 
 .banner-row-col-one, .banner-row-col-two{
@@ -125,21 +125,69 @@ nav li a{
 }
 
 .banner-row-col-one{
-    width: 650px;
-    min-width: 500px;
+    width: 50%;
 }
 
 .banner-row-col-one img{
-    height: 500px;
+    width: 85%;
 }
 
 .banner-row-col-two{
     text-align: left;
     border: #A2DBFA solid 20px;
     padding: 32px;
-    width: 550px;
-    min-width: 500px;
+    width: 40%;
     box-shadow: #3A4750 8px 8px 2px;
+}
+
+@media only screen and (max-width: 1142px){
+
+    .banner-row-col-two{
+        width: 38%;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 954px){
+
+    .banner-row-col-two{
+        text-align: center;
+        width: 50%;
+    }
+
+    .banner-row-col-one{
+        width: 75%;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+
+    .banner-row-col-two{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
 }
 
 /* ABOUT SECTION */
@@ -147,18 +195,36 @@ nav li a{
 #about-me{
     background-color: #303841;
     text-align: center;
-    padding: 4% 0;
+    padding: 7% 2%;
 }
 
 #about-me .row-one, .row-two{
-    margin-bottom: 80px;
+    margin-bottom: 85px;
+}
+
+#about-me .row-three{
+    margin-bottom: 30px;
+}
+
+.about-me-row-one-column-one{
+    padding: 0 15%;
+}
+
+.about-me-row-one-column-one p{
+    text-align: left;
 }
 
 .about-me-row-two-column-one, .about-me-row-two-column-two{
     display: inline-block;
     vertical-align: middle;
-    padding: 26px;
-    width: 650px;
+}
+
+.about-me-row-two-column-one{
+    width: 55%;
+}
+
+.about-me-row-two-column-two{
+    width: 40%;
 }
 
 .profile-detail-row-one, .profile-detail-row-two, .profile-detail-row-three{
@@ -183,12 +249,19 @@ nav li a{
 }
 
 .profile-detail-row-three-column-two, .profile-detail-row-three-column-three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    padding: 2px;
     font-size: 18px;
 }
 
 .profile-detail-row-three-column-two{
     background-color: #0071CE;
+    height: 32px;
 }
 
 .profile-detail-row-three-column-two h4::after{
@@ -202,14 +275,6 @@ nav li a{
 
 .profile-detail-row-three-column-three{
     background-color: #FF5858;
-    padding-right: 12px;
-}
-
-.profile-detail-row-three-column-three h4::before{
-    content: "+";
-    font-weight: bold;
-    position: relative;
-    right: 16px;
 }
 
 .skills-icon{
@@ -219,6 +284,7 @@ nav li a{
 .my-interest{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
     gap: 20px;
     padding: 28px 120px 0;
 }
@@ -245,6 +311,63 @@ nav li a{
     background-color: #2185D5;
     border-color: #303841;
 }
+
+@media only screen and (max-width: 1308px){
+    .about-me-row-two-column-one{
+        width: 58%;
+    }
+
+    .about-me-row-two-column-two{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+
+    .about-me-row-one-column-one p{
+        text-align: center;
+    }
+
+    .about-me-row-two-column-one, .about-me-row-two-column-two{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .about-me-row-two-column-one{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 790px){
+
+    .about-me-row-two-column-one{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+     .profile-detail-row-three-column-three{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-detail-row-three-column-three{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .profile-detail-row-three-column-three{
+        font-size: 12px;
+    }
+
+    .profile-detail-row-three-column-two{
+        font-size: 16px;
+    }
+}
+
 
 /* TALENT SECTION */
 
