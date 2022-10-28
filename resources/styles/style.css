@@ -199,8 +199,12 @@ nav li a{
     padding: 7% 2%;
 }
 
-#about-me .row-one, .row-two{
-    margin-bottom: 85px;
+#about-me h2{
+    margin-bottom: 18px;
+}
+
+#about-me .row-one, #about-me .row-two{
+    margin-bottom: 45px;
 }
 
 #about-me .row-three{
@@ -400,45 +404,109 @@ nav li a{
     text-align: center;
     background-color: #3A4750;
     color: #f3f3f3;
-    padding: 4rem 0;
+    padding: 4% 2%;
 }
 
-#talents h2{
-    margin-bottom: 6rem;
+#talents .row-one, #talents .row-two{
+    margin-bottom: 36px;
 }
 
-.talent-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.talents-row-two-col-one, .talents-row-two-col-two{
+    display: inline-block;
+    vertical-align: middle;
 }
 
- .talent-paragraph{
-    width: 23.7rem;
-    padding: 4rem;
+.talents-row-two-col-one{
+    padding: 36px;
+    width: 25%;
     background-color: #303841;
- }
+}
 
- .talent-dial-container{
-    width: 35.7rem;
- }
+.talents-row-two-col-two{
+    width: 40%;
+}
 
- .talent-dial-item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    text-align: left;
- }
-
- .talent-dial-item img{
+.talent-dial-item img{
     width: 22%;
-    float: left;
-    margin-left: 12rem;
- }
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.talent-dial-item .dial-text{
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1124px){
+    .talents-row-two-col-one{
+        width: 38%;
+    }
+
+    .talents-row-two-col-two{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 968px){
+
+    .talents-row-two-col-one{
+        width: 45%;
+        margin-bottom: 36px;
+    }
+
+    .talents-row-two-col-two{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .talents-row-two-col-one{
+        width: 50%;
+    }
+
+    .talents-row-two-col-two{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .talents-row-two-col-one{
+        width: 60%;
+    }
+
+    .talents-row-two-col-two{
+        width: 100%;
+    }
+
+    .dial-text p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 495px){
+
+    .talents-row-two-col-one{
+        width: 70%;
+    }
+
+    .talent-dial-item img{
+        width: 30%;
+    }
+
+    .talent-dial-item{
+        text-align: left;
+    }
+
+    .talent-dial-item .dial-text{
+        width: 65%;
+    }
+}
 
  /* PROJECT SHOWCASE */
+ 
  #projects{
     padding: 4rem 0;
     background-color: #303841;
