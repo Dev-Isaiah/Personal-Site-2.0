@@ -186,7 +186,7 @@ nav li a {
 @media only screen and (max-width: 720px) {
 
     .banner-row-col-two {
-        width: 40%;
+        width: 60%;
     }
 
     h1 {
@@ -646,34 +646,35 @@ nav li a {
     text-align: center;
 }
 
-#contact-me .row-one{
+#contact-me .row-one {
     margin-bottom: 42px;
 }
 
-#contact-me .row-two{
+#contact-me .row-two {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     column-gap: 18px;
     row-gap: 80px;
+    padding: 30px;
 }
 
-#contact-me .row-two a{
+#contact-me .row-two a {
     color: #F3F3F3;
     text-decoration: none;
 }
 
-#contact-me .row-two a:hover > h3{
+#contact-me .row-two a:hover>h3 {
     color: #FF5656;
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 929px){
-    #contact-me .row-two{
+@media only screen and (max-width: 929px) {
+    #contact-me .row-two {
         grid-template-columns: auto;
     }
 }
 
-.contact-me-icon{
+.contact-me-icon {
     font-size: 42px;
     background-color: #6A7EFC;
     padding: 38px;
@@ -686,46 +687,61 @@ nav li a {
 footer {
     background-color: #205375;
     color: #f3f3f3;
-    padding: 2% 0;
+    padding: 4% 2%;
     text-align: center;
 }
 
-.footer-social-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+    row-gap: 36px;
+    margin: auto;
+    width: 60%;
 }
 
-.social-row {
+.footer-row-one-col-one{
+    padding: 30px;
+}
+
+.footer-socials a {
+    color: #f3f3f3;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    width: auto;
 }
 
-.social-item {
-    margin: 25px 100px;
-    width: 150px;
-    color: #FDFCE5;
-    text-decoration: inherit;
-    transition-duration: 0.5s;
+.footer-socials a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FF5656;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.social-item:hover {
-    transform: scale(1.3);
-}
-
-.social-item h4 {
-    font-weight: 300;
+.footer-socials a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .footer-social-icon {
-    float: left;
-    font-size: 24px;
+    font-size: 26px;
+    margin-right: 18px;
 }
 
 hr {
     width: 45%;
-    margin: 2rem auto;
+    margin: 28px auto;
+}
+
+.footer-row-two-col-one{
+    padding: 18px;
 }
