@@ -455,6 +455,10 @@ nav li a {
     vertical-align: middle;
 }
 
+.talent-dial-item .dial-text p{
+    font-weight: 300;
+}
+
 @media only screen and (max-width: 1124px) {
     .talents-row-two-col-one {
         width: 38%;
