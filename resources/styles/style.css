@@ -284,7 +284,7 @@ nav li a {
 }
 
 .profile-detail-row-three-column-two h4::after {
-    content: url(file:///C:/Users/irbro/Desktop/Projects/personal-website/resources/images/walmart-spark.png);
+    content: url(https://raw.githubusercontent.com/DEVArt1st/Personal-Site-2.0/main/resources/images/walmart-spark.png);
     position: relative;
     zoom: 4%;
     top: 100px;
