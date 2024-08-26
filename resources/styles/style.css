@@ -280,17 +280,8 @@ nav li a {
 }
 
 .profile-detail-row-three-column-two {
-    background-color: #0071CE;
+    background-color: #71BF44;
     height: 32px;
-}
-
-.profile-detail-row-three-column-two h4::after {
-    content: url(https://raw.githubusercontent.com/DEVArt1st/Personal-Site-2.0/main/resources/images/walmart-spark.png);
-    position: relative;
-    zoom: 4%;
-    top: 100px;
-    left: 160px;
-    font-size: 24px;
 }
 
 .profile-detail-row-three-column-three {
